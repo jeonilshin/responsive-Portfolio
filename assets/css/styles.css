@@ -871,14 +871,122 @@ img {
   height: 10rem;
 }
 
-/* Opaque placeholder */
+.contact__area textarea {
+  resize: none;
+  padding-top: 1rem;
+}
 
+.contact__button {
+  background-color: var(--first-color);
+  cursor: pointer;
+}
+
+/* Opaque placeholder */
+.contact__input:focus::placeholder {
+  opacity: 0;
+}
 
 /* Move label up & sticky label */
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label {
+  opacity: 1;
+  top: -16px;
+}
 
+.contact__social {
+  display: grid;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 10%);
+  padding-block: 1rem 2rem;
+  text-align: center;
+}
+
+.contact__social-arrow {
+  width: 32px;
+  margin: 0 auto;
+}
+
+.contact__social-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.contact__social-description-1 {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+}
+
+.contact__social-description-2 {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: .75rem;
+}
+
+.contact__social-link {
+  background-color: var(--black-color-light);
+  padding: 6px;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  transition: background-color .3s;
+}
+
+.contact__social-link:hover {
+  background-color: var(--first-color);
+}
+
+.contact_message {
+  color: rgb(7, 160, 7);
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
 
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--black-color);
+}
 
+.footer__container {
+  padding-block: 3rem 2rem;
+  row-gap: 2.5rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer__link {
+  color: var(--white-color);
+  transition: color .4s;
+}
+
+.footer__link:hover {
+  color: var(--text-color-light);
+}
+
+.footer__copy {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.footer__copy a {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
 
 /*=============== SCROLL BAR ===============*/
 

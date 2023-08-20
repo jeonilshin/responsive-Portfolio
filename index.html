@@ -368,6 +368,8 @@
                            <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
                            <label for="message" class="contact__label">Message</label>
                         </div>
+                        
+                        <p class="contact_message" id="contact-message"></p>
 
                         <button type="submit" class="contact__button button">
                            <i class="ri-send-plane-line"></i> Send Message
@@ -385,7 +387,7 @@
                            이메일을 보내지는 않습니다.
                         </p>
 
-                        <p class="contact__social-description-1">
+                        <p class="contact__social-description-2">
                            제 SNS에 메시지를 보내주세요.
                         </p>
                      </div>
@@ -394,9 +396,7 @@
                         <a href="https://www.instagram.com/jeon.ilshin" target="_blank" class="contact__social-link">
                            <i class="ri-instagram-line"></i>
                         </a>
-                     </div>
 
-                     <div class="contact__social-links">
                         <a href="https://www.facebook.com/profile.php?id=100089473549447" target="_blank" class="contact__social-link">
                            <i class="ri-facebook-box-line"></i>
                         </a>
@@ -409,7 +409,26 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#about" class="footer__link">자기소개 </a>
+               </li>
+
+               <li>
+                  <a href="#services" class="footer__link">Services </a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link">Projects </a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; All Rights Reserved By
+               <a href="">전일신.</a>
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
@@ -419,7 +438,7 @@
       <script src=""></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
