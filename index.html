@@ -31,7 +31,7 @@
 
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
+                     <a href="#home" class="nav__link active-link">Home</a>
                   </li>
 
                   <li class="nav__item">
@@ -43,7 +43,7 @@
                   </li>
 
                   <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact</a>
+                     <a href="#contact" class="nav__link nav__link-button">Contact</a>
                   </li>
                </ul>
 
@@ -53,6 +53,7 @@
             </div>
 
             <div class="nav__buttons">
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
                <div class="nav__toggle" id="nav-toggle">
                   <i class="ri-menu-4-line"></i>
                </div>
@@ -104,9 +105,9 @@
                      <div class="home__scroll-box">
                         <i class="ri-mouse-line"></i>   
                      </div>
-                  </div>
 
-                  <span class="home__scroll-text"> <i class="ri-arrow-down-s-line"></i> Scroll Down</span>
+                     <span class="home__scroll-text"> <i class="ri-arrow-down-s-line"></i> Scroll Down</span>
+                  </div>
                </div>
             </div>
          </section>
@@ -115,7 +116,7 @@
          <section class="about section" id="about">
             <div class="about__container container grid">
                <h2 class="section__title-1">
-                  <span>자기소개 .</span>
+                  <span>자기소개</span>
                </h2>
 
                <div class="about__perfil">
@@ -134,7 +135,7 @@
                      저는 <b>클라우드</b>를 깊이 있게 탐구하고자 하는 열정적인 <b>학생</b>입니다. <b>인공지능</b>과 <b>빅데이터</b>에도 관심을 가지고 있고, 새로운 기술과 분야에 도전하는 것을 즐깁니다. <b>전공 심화 동아리</b>에서 3년간 주장으로 활동하면서 <b>리더십</b> 역시 길렀습니다.
                      이 기간 동안 학교에 쉬는 날도 없이 밤 9시까지 머물며 제 <b>지식과 실력을 꾸준히 향상시켰습니다</b>. 이제는 쌓아온 <b>경험과 역량을 더욱 활용하여 미래의 도전에 임하고 성장</b>하려 합니다.
                   </p>
-
+               
                   <div class="about__buttons">
                      <a href="" class="button">
                         <i class="ri-notion-line"></i> 레주메 읽기
@@ -149,9 +150,9 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" id="services">
             <h2 class="section__title-2">
-               <span>Services .</span>
+               <span>Services</span>
             </h2>
 
             <div class="services__container container grid">
@@ -221,7 +222,7 @@
          <!--==================== PROJECTS ====================-->
          <section class="projects section" id="projects">
             <h2 class="section__title-1">
-               <span>Projects .</span>
+               <span>Projects</span>
             </h2>
 
             <div class="projects__container container grid">
@@ -358,23 +359,22 @@
                            <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
                            <label for="email" class="contact__label">Email Address</label>
                         </div>
-
-                        <div class="contact__box">
-                           <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
-                           <label for="subject" class="contact__label">Subject</label>
-                        </div>
-
-                        <div class="contact__box contact__area">
-                           <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
-                           <label for="message" class="contact__label">Message</label>
-                        </div>
-                        
-                        <p class="contact_message" id="contact-message"></p>
-
-                        <button type="submit" class="contact__button button">
-                           <i class="ri-send-plane-line"></i> Send Message
-                        </button>
                      </div>
+                     <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                     </div>
+                     
+                     <p class="contact_message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i> Send Message
+                     </button>
                   </form>
                </div>
 
@@ -384,7 +384,7 @@
                   <div class="contact__social-data">
                      <div>
                         <p class="contact__social-description-1">
-                           이메일을 보내지는 않습니다.
+                           개인적인 질문 있으면
                         </p>
 
                         <p class="contact__social-description-2">
@@ -432,7 +432,9 @@
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src=""></script>
