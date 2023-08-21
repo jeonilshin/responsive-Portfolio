@@ -12,6 +12,7 @@
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
       <title>Responsive portfolio website Rian - Bedimcode</title>
    </head>
@@ -20,7 +21,7 @@
       <header class="header" id="header">
          <nav class="nav container">
             <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">J</span>
+               <span class="nav__logo-circle">S</span>
                <span class="nav__logo-name">code.ILSHIN</span>
             </a>
 
@@ -121,8 +122,22 @@
 
                <div class="about__perfil">
                   <div class="about__image">
-                     <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
-
+                     <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <img src="assets/img/about-perfil-1.jpg" alt="image" class="about__img">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/about-perfil-2.jpg" alt="image" class="about__img">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/about-perfil-3.jpg" alt="image" class="about__img">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="assets/img/about-perfil-4.mov" alt="movie" class="about__img">
+                           </div>
+                        </div>
+                     </div>
                      <div class="about__shadow"></div>
                      <div class="geometric-box"></div>
                      <img src="assets/img/random-lines.svg" alt="" class="about__line">
@@ -167,7 +182,7 @@
 
                      <h2 class="services__title">Cloud Computing</h2>
 
-                     <p class="services__description">클라우드컴퓨팅 환경에서 애플리케이션을 개발하고 운영하는 역할을 말합니다.</p>
+                     <p class="services__description">3년동안 전공심화 동아리인 클라우드컴퓨팅 동아리에 주장으로 활동하면서 3번이나 대회 참가 했고 AWS에 여러가지 서비스도 공부했습니다.</p>
                   </div>
                </article>
 
@@ -182,7 +197,7 @@
 
                      <h2 class="services__title">Frontend</h2>
 
-                     <p class="services__description">웹 애플리케이션 또는 소프트웨어의 UI를 담당하는 부분을 말합니다.</p>
+                     <p class="services__description">2년동안 시리와 빅스비 인공지능 동아리에 주장으로 활동하면서 인공지능을 작동 하는 웹 화면을 필요했기 때문에 FrontEnd도 공부했습니다.</p>
                   </div>
                </article>
 
@@ -197,7 +212,7 @@
 
                      <h2 class="services__title">Backend</h2>
 
-                     <p class="services__description">웹 애플리케이션 또는 소프트웨어의 서버를 담당하는 부분을 말합니다.</p>
+                     <p class="services__description">클라우드를 공부하면서 인프라 구축와 CICD 자동화를 구성하고, 배포하기 위해 Backend도 많이 사용했고, 많이 공부했습니다.</p>
                   </div>
                </article>
 
@@ -212,7 +227,37 @@
 
                      <h2 class="services__title">iOS 앱 개발</h2>
 
-                     <p class="services__description">애플의 iOS 운영 체제를 사용하는 모바일 위한 애플리케이션을 개발하는 역할을 말합니다.</p>
+                     <p class="services__description">취미 생활로 Swift UI를 이용해서 여러가지 iOS 앱 프로젝트를 만들었습니다. 채팅 앱, 게임, 간단한 계산기 같은 앱을 만들어 봤습니다.</p>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-brain-line"></i>
+                     </div>
+
+                     <h2 class="services__title">인공지능</h2>
+
+                     <p class="services__description">2년동안 시리와 빅스비 인공지능 동아리에 주장으로 활동하면서 Machine Learning을 공부했고, Tensorflow 같은 인공지능 언어를 공부했습니다.</p>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-brain-line"></i>
+                     </div>
+
+                     <h2 class="services__title">IoT</h2>
+
+                     <p class="services__description">취미 생활로 클라우드와 Arduino를 연결해서 많이 실험과 작동을 해봤습니다. 그리고 취미 생활 뿐만 아니라 학교 수업 시간에도 배웠고, 여러번 작동해봤습니다.</p>
                   </div>
                </article>
 
@@ -321,6 +366,26 @@
                      </a>
                   </div>
                </article>
+            </div>
+         </section>
+
+         <!--==================== TERMINAL ===================-->
+
+         <section class="terminal section" id="terminal">
+            <h2 class="section__title-2">
+               <span>Terminal</span>
+            </h2>
+            
+            <div class="terminal">
+               <a href="#" class="terminal__button">
+                  <span class="terminal__button-text">
+                     터미널
+                  </span>
+                  <img src="assets/img/cmd.png" alt="" class="button__cone">
+                  <img src="assets/img/desktop.png" alt="" class="button__desktop">
+                  <img src="assets/img/js.png" alt="" class="button__icosahedron">
+                  <img src="assets/img/point.png" alt="" class="button__point">
+               </a>
             </div>
          </section>
 
@@ -435,7 +500,22 @@
       <a href="#" class="scrollup" id="scroll-up">
          <i class="ri-arrow-up-s-line"></i>
       </a>
-
+      <!--=========== SWIPER =============-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 1,
+           spaceBetween: 30,
+           loop: true,
+           autoplay: {
+             delay: 3000,
+           },
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           },
+         });
+       </script>
       <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>
       

@@ -1023,6 +1023,92 @@ body.dark-theme {
   left: 0;
 }
 
+/*=============== TERMINAL ===============*/
+.terminal {
+  height: 40vh;
+  padding-bottom: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--body-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.terminal__button {
+  position: relative;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .9rem 2.20rem;
+  border-radius: 3rem;
+  transition: .4s;
+}
+
+.terminal__button a {
+  text-decoration: none;
+}
+
+.terminal__button-text {
+  position: relative;
+  z-index: 10;
+}
+
+.terminal__button img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: .6s;
+  opacity: 0;
+}
+
+.button__cone {
+  width: 48px;
+  transform: translate(-50px, -6px) rotate(-30deg);
+}
+
+.button__desktop {
+  width: 38px;
+  transform: translate(7px, -30px) rotate(30deg);
+}
+
+.button__icosahedron {
+  width: 40px;
+  transform: translate(50px, -4px) rotate(45deg);
+}
+
+.button__point {
+  width: 45px;
+  transform: translate(-5px, 30px) rotate(10deg);
+}
+
+.terminal__button:hover::after {
+  opacity: 1;
+}
+
+.terminal__button:hover {
+  transform: scale(1.3);
+}
+
+.terminal__button:hover img {
+  opacity: 1;
+}
+
+.button:hover .button__cone {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.button:hover .button__desktop {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.button:hover .button__icosahedron {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.button:hover .button__point {
+  transform: translate(-14px, 20px) scale(1.1);
+}
+
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--black-color);
